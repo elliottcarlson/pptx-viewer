@@ -28,7 +28,6 @@ p:extLst     | [0..1] | p:CT_ExtensionListModify  | Extension List with Mod Flag
 
 #### Attributes
 
-
 Name             | Occ    | Type        | Description                        | Default
 ---------------- | ------ | ----------- | ---------------------------------- | -------
 showMasterSp     | [0..1] | xsd:boolean | Show Master Shapes                 | "true"
@@ -38,16 +37,18 @@ show             | [0..1] | xsd:boolean | Show Slide in Slide Show           | "
 #### Schema
 
 ```
-<xsd:sequence>
-  <xsd:element name="cSld"       type="CT_CommonSlideData"/>
-  <xsd:element name="clrMapOvr"  type="a:CT_ColorMappingOverride" minOccurs="0"/>
-  <xsd:element name="transition" type="CT_SlideTransition"        minOccurs="0"/>
-  <xsd:element name="timing"     type="CT_SlideTiming"            minOccurs="0"/>
-  <xsd:element name="extLst"     type="CT_ExtensionListModify"    minOccurs="0"/>
-</xsd:sequence>
-<xsd:attribute name="showMasterSp"     type="xsd:boolean" default="true"/>
-<xsd:attribute name="showMasterPhAnim" type="xsd:boolean" default="true"/>
-<xsd:attribute name="show"             type="xsd:boolean" default="true"/>
+<xsd:complexType name="CT_Slide">
+  <xsd:sequence>
+    <xsd:element name="cSld"       type="CT_CommonSlideData"/>
+    <xsd:element name="clrMapOvr"  type="a:CT_ColorMappingOverride" minOccurs="0"/>
+    <xsd:element name="transition" type="CT_SlideTransition"        minOccurs="0"/>
+    <xsd:element name="timing"     type="CT_SlideTiming"            minOccurs="0"/>
+    <xsd:element name="extLst"     type="CT_ExtensionListModify"    minOccurs="0"/>
+  </xsd:sequence>
+  <xsd:attribute name="showMasterSp"     type="xsd:boolean" default="true"/>
+  <xsd:attribute name="showMasterPhAnim" type="xsd:boolean" default="true"/>
+  <xsd:attribute name="show"             type="xsd:boolean" default="true"/>
+</xsd:complexType>
 ```
 
 #### References

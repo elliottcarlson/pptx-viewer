@@ -98,11 +98,13 @@
                   loadMarkdown(msg);
                 },
                 error: function(xhr, ajaxOptions, thrownError) {
+                  current_file = '';
                   loadMarkdown('# Unable to load documentation for `<' + found[1] + '>`.');
                 }
               });
             }
           } else {
+            current_file = '';
             loadMarkdown('# Nothing available for ' + found[1]);
           }
         });
