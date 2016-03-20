@@ -1,17 +1,17 @@
-# &lt;a:srgbClr&gt;
+# &lt;a:scrgbClr&gt;
 
-RGB Color Model - Hex Variant
+RGB Color Model - Percentage Variant
 
 #### Description
 
-This element specifies a color using the red, green, blue color model. Red, green, and blue is expressed as sequence of hex digits, RRGGBB. A perceptual gamma of 2.2 is used.
+s element specifies a color using the red, green, blue color model. Each component, red, green, and blue is expressed as a percentage from 0% to 100%. A linear gamma of 1.0 is assumed.
 
 Specifies the level of red as expressed by a percentage offset increase or decrease relative to the input color.
 
 #### Element Information
 
 **Namespace**: http://schemas.openxmlformats.org/drawingml/2006/main
-**Type**: a:CT_SRgbColor
+**Type**: a:CT_ScRgbColor
 
 #### Parent Elements
 
@@ -103,16 +103,20 @@ a:invGamma | [0..*] | a:CT_InverseGammaTransform   | Inverse Gamma
 
 Name      | Occ    | Type            | Description    | Default
 --------- | ------ | --------------- | -------------- | -------
-val       | [1..1] | a:ST_HexBinary3 | Value          | 
+r         | [1..1] | a:ST_Percentage | Red            | 
+g         | [1..1] | a:ST_Percentage | Green          | 
+b         | [1..1] | a:ST_Percentage | Blue           | 
 
 #### Schema
 
 ```
-<xsd:complexType name="CT_SRgbColor">
+<xsd:complexType name="CT_ScRgbColor">
   <xsd:sequence>
     <xsd:group ref="EG_ColorTransform" minOccurs="0" maxOccurs="unbounded"/>
   </xsd:sequence>
-  <xsd:attribute name="val" type="s:ST_HexColorRGB" use="required"/>
+  <xsd:attribute name="r" type="ST_Percentage" use="required"/>
+  <xsd:attribute name="g" type="ST_Percentage" use="required"/>
+  <xsd:attribute name="b" type="ST_Percentage" use="required"/>
 </xsd:complexType>
 
 <xsd:group name="EG_ColorTransform">
@@ -151,5 +155,5 @@ val       | [1..1] | a:ST_HexBinary3 | Value          |
 
 #### References
 
-http://www.datypic.com/sc/ooxml/e-a_srgbClr-1.html
-https://msdn.microsoft.com/en-us/library/office/documentformat.openxml.drawing.rgbcolormodelhex.aspx
+http://www.datypic.com/sc/ooxml/e-a_scrgbClr-1.html
+https://msdn.microsoft.com/en-us/library/office/documentformat.openxml.drawing.rgbcolormodelpercentage.aspx
