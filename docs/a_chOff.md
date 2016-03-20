@@ -39,5 +39,5 @@ y      | [1..1] | a:ST_Coordinate | Y-Axis Coordinate |
 
 #### References
 
-http://www.datypic.com/sc/ooxml/e-a_off-1.html
+http://www.datypic.com/sc/ooxml/e-a_chOff-1.html
 https://msdn.microsoft.com/en-us/library/office/documentformat.openxml.drawing.spreadsheet.position.aspx
