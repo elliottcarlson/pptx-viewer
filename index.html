@@ -94,7 +94,7 @@
                 },
                 error: function(xhr, ajaxOptions, thrownError) {
                   current_file = '';
-                  loadMarkdown('# Unable to load documentation for `<' + found[1] + '>`.');
+                  loadMarkdown('# No documentation available yet for `<' + found[1] + '>`.' + "\n\n" + '[Why not add it with a pull request?](https://github.com/elliottcarlson/pptx-viewer)');
                 }
               });
             }
