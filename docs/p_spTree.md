@@ -13,7 +13,9 @@ This complex type specifies a group shape that represents one or more shapes gro
 
 #### Parent Elements
 
-`<p:cSld>`
+Name               | Type
+------------------ | ----------------------------------
+p:cSld             | p:CT_CommonSlideData
 
 #### Child Elements
 

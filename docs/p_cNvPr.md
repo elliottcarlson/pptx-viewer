@@ -13,11 +13,13 @@ This element specifies non-visual canvas properties. This allows for additional 
 
 #### Parent Elements
 
-> - Type p:CT_ConnectorNonVisual (`<p:nvCxnSoPr>`)
-> - Type p:CT_GraphicalObjectFrameNonVisual (`<p:nvGraphicFramePr>`)
-> - Type p:CT_GroupShapeNonVisual (`<p:nvGrpSpPr>`)
-> - Type p:CT_PictureNonVisual (`<p:nvPicPr>`)
-> - Type p:CT_ShapeNonVisual (`<p:nvSpPr>`)
+Name               | Type
+------------------ | ----------------------------------
+p:nvCxnSoPr        | p:CT_ConnectorNonVisual
+p:nvGraphicFramePr | p:CT_GraphicalObjectFrameNonVisual
+p:nvGrpSpPr        | p:CT_GroupShapeNonVisual
+p:nvPicPr          | p:CT_PictureNonVisual
+p:nvSpPr           | p:CT_ShapeNonVisual
 
 #### Child Elements
 
@@ -34,6 +36,7 @@ Name   | Occ    | Type                  | Description                 | Default
 id     | [1..1] | a:ST_DrawingElementId | Unique Identifier           |
 name   | [1..1] | xsd:string            | Name                        |
 descr  | [0..1] | xsd:string            | Alternative Text for Object | ""
+title  | [0..1] | xsd:string            | Undocument besides in XSD   | ""
 hidden | [0..1] | xsd:boolean           | Visual state                | "false"
 
 #### Schema

@@ -13,7 +13,9 @@ This element specifies the non-visual properties of a hierarchical grouping of s
 
 #### Parent Elements
 
-- Type p:CT_GroupShapeNonVisual (`<p:nvGrpSpPr>`)
+Name               | Type
+------------------ | ----------------------------------
+p:nvGrpSpPr        | p:CT_GroupShapeNonVisual
 
 #### Child Elements
 

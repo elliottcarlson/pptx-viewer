@@ -13,7 +13,10 @@ This element specifies all non-visual properties for a group shape. This element
 
 #### Parent Elements
 
-`<p:grpSp>` & `<p:spTree>`
+Name               | Type
+------------------ | ----------------------------------
+p:grpSp            | p:CT_GroupShape
+p:spTree           | p:CT_GroupShape
 
 #### Child Elements
 

@@ -10,7 +10,6 @@ This element specifies the existence of a single shape. A shape can either be a 
 
 **Namespace**: http://schemas.openxmlformats.org/presentationml/2006/main
 **Type**: p:CT_Slide
-**Spec Section**: 19.3.1.38
 
 #### Parent Elements
 

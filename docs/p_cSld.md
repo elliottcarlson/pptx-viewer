@@ -13,7 +13,9 @@ This element specifies a container for slide information that is relevant to all
 
 #### Parent Elements
 
-`<p:sld>`
+Name               | Type
+------------------ | ----------------------------------
+p:sld              | p:CT_Slide
 
 #### Child Elements
 
