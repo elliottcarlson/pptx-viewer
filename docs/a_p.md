@@ -61,3 +61,4 @@ a:endParaRPr | [0..1] | a:CT_TextCharacterProperties | End Paragraph Run Propert
 
 http://www.datypic.com/sc/ooxml/e-a_p-1.html
 https://msdn.microsoft.com/en-us/library/office/documentformat.openxml.drawing.paragraph.aspx
+http://python-pptx.readthedocs.org/en/develop/dev/analysis/schema/ct_textparagraph.html
