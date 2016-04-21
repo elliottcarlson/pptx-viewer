@@ -84,6 +84,37 @@ hangingPunct | [0..1] | xsd:boolean              | Hanging Punctuation   |
   <xsd:attribute name="latinLnBrk" type="xsd:boolean"/>
   <xsd:attribute name="hangingPunct" type="xsd:boolean"/>
 </xsd:complexType>
+
+<xsd:group name="EG_TextBulletColor">
+  <xsd:choice>
+    <xsd:element name="buClrTx" type="CT_TextBulletColorFollowText" minOccurs="1" maxOccurs="1"/>
+    <xsd:element name="buClr" type="CT_Color" minOccurs="1" maxOccurs="1"/>
+  </xsd:choice>
+</xsd:group>
+
+<xsd:group name="EG_TextBulletSize">
+  <xsd:choice>
+    <xsd:element name="buSzTx" type="CT_TextBulletSizeFollowText"/>
+    <xsd:element name="buSzPct" type="CT_TextBulletSizePercent"/>
+    <xsd:element name="buSzPts" type="CT_TextBulletSizePoint"/>
+  </xsd:choice>
+</xsd:group>
+
+<xsd:group name="EG_TextBulletTypeface">
+  <xsd:choice>
+    <xsd:element name="buFontTx" type="CT_TextBulletTypefaceFollowText"/>
+    <xsd:element name="buFont" type="CT_TextFont"/>
+  </xsd:choice>
+</xsd:group>
+
+<xsd:group name="EG_TextBullet">
+  <xsd:choice>
+    <xsd:element name="buNone" type="CT_TextNoBullet"/>
+    <xsd:element name="buAutoNum" type="CT_TextAutonumberBullet"/>
+    <xsd:element name="buChar" type="CT_TextCharBullet"/>
+    <xsd:element name="buBlip" type="CT_TextBlipBullet"/>
+  </xsd:choice>
+</xsd:group>
 ```
 
 #### References
