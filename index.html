@@ -137,7 +137,7 @@
           if (files.length == 1) {
             var entry = event.dataTransfer.items[0].webkitGetAsEntry();
             var file = files[0];
-            var is_pptx = file.name.match(/\.pptx/);
+            var is_pptx = (file.name.match(/\.pptx/) || file.name.match(/\.ppsm/));
 
             if (entry.isFile && is_pptx) {
               unzip(file);
